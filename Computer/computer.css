@@ -176,11 +176,12 @@ h2.content-title {
 }
 
 div.search-bar-wrapper {
-  padding: 10px 20px;
+  padding: 5px 5px;
   background-color: var(--light-color);
   color: var(--secondary-color);
   border-radius: 5px;
   width: 400px;
+  border: 2px solid black;
 }
 
 input#search-bar {
@@ -191,52 +192,57 @@ input#search-bar {
 }
 
 div.main-content {
-  height: 60vh;
+  height: 72vh;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  padding: 0 20px;
 }
 
-div.row {
+div.main-content-header {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-items: center;
-  padding: 1vw 0;
+  height: 82px;
+  margin: 0;
 }
 
-div.box {
-  width: 220px;
-  height: 110px;
-  background: rgba(247, 246, 246, 0.83);
-  color: var(--dark-color);
-  border-radius: 8px;
+div.buttons {
   display: flex;
+  gap: 20px;
 }
 
-div.box div {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
+div.buttons button {
+  font-size: 25px;
+  padding: 5px 10px;
+  cursor: pointer;
 }
-div.box div img {
-  width: 40px;
-  height: 40px;
-}
-
-div.box div:first-child {
-  width: 65%;
-  gap: 10px;
-}
-
-div.box div:last-child {
-  font-size: 40px;
-  width: 35%;
-}
-
-div.box div:first-child span:first-child {
-  font-size: 30px;
-}
-
-table {
-  text-align: left;
+div.main-content-table table {
   width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  height: 100%;
+}
+
+div.main-content-table table tr th {
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;
+}
+
+div.main-content-table table tr {
+  border-bottom: 2px solid black;
+}
+
+table tr td {
+  padding: 10px 0;
+}
+
+img.button-icon {
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+}
+
+div.main-content-table table tr:last-child {
+  border-bottom: none;
 }
