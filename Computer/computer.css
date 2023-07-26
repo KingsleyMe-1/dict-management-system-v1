@@ -255,3 +255,73 @@ img.button-icon {
 div.main-content-table table tr:last-child {
   border-bottom: none;
 }
+
+dialog.modal {
+  margin-top: -30px;
+  width: 1200px;
+  height: 550px;
+  position: absolute;
+  padding: 20px;
+  background-color: green;
+}
+
+div.modal-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+div.modal-header h1 {
+  padding: 0;
+  margin: 0;
+  margin-left: 20%;
+}
+
+div.modal-content {
+  display: flex;
+}
+
+div.modal-content div.left {
+  width: 76%;
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+div.modal-content div.right {
+  width: 24%;
+  height: 440px;
+  background-color: yellow;
+}
+
+span.user-input input {
+  width: 8ch;
+  padding: 2px 4px;
+}
+
+div.left table {
+  width: 100%;
+  text-align: center;
+  border: 2px solid black;
+  padding: 20px 5px;
+}
+
+div.left table tr td input {
+  width: 10ch;
+  font-size: 18px;
+  padding: 4px 8px;
+}
+
+td input#available,
+td input#functional {
+  height: 20px;
+}
+
+button.save-button {
+  padding: 5px 15px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
