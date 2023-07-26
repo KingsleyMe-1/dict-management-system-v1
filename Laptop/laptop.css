@@ -142,10 +142,19 @@ nav.navbar:hover a.nav-link {
 nav.navbar:hover a.nav-link span#text4 {
   margin-left: 36px;
 }
+nav.navbar:hover a.nav-link span#text3 {
+  margin-left: 36px;
+}
+nav.navbar:hover a.nav-link span#text7 {
+  margin-left: 26px;
+}
+nav.navbar:hover a.nav-link span#text6 {
+  margin-left: 34px;
+}
 nav.navbar:hover a.nav-link span#text5 {
   margin-left: 33px;
 }
-nav.navbar:hover a.nav-link span#text7 {
+nav.navbar:hover a.nav-link span#text8 {
   margin-left: 33px;
 }
 nav.navbar:hover a.nav-link span#text1 {
