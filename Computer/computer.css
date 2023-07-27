@@ -257,15 +257,85 @@ div.main-content-table table tr:last-child {
 }
 
 dialog.add-modal {
-  width: 800px;
+  width: 900px;
   height: 480px;
   padding: 20px;
 }
 
-div.add-modal-left {
-  width: 100%;
+dialog.add-modal::backdrop {
+  background: #0e259b;
+  opacity: 0.8;
+}
+
+div.add-modal-header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+  margin-bottom: 10px;
+}
+
+div.add-modal-header h1 {
+  padding: 0;
+  margin: 0;
+  margin-left: -50px;
+}
+
+div.add-modal-header img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+div.add-modal-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+table.add-modal-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+tr.add-modal-tr th {
+  padding: 10px 0;
+  border-bottom: 2px solid black;
+}
+
+button.add-save-button,
+button.edit-save-button {
+  width: auto;
+  padding: 12px 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 18px;
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+button.add-save-button:hover,
+button.edit-save-button:hover {
+  background-color: #0e259b;
+  color: var(--light-color);
+}
+
+input#add-available,
+input#add-functional,
+input#edit-functional,
+input#edit-available {
+  width: 20px;
+  height: 20px;
+}
+
+input.add-number-input,
+input.edit-number-input {
+  width: 12ch;
+  font-size: 15px;
+  padding: 4px 6px;
 }
 
 dialog.edit-modal {
@@ -280,19 +350,19 @@ dialog.edit-modal::backdrop {
   opacity: 0.8;
 }
 
-dialog.edit-modal div.modal-header {
+div.edit-modal-header {
   display: flex;
   align-items: center;
   padding: 10px 0;
 }
 
-dialog.edit-modal div.modal-header h1 {
+div.edit-modal-header h1 {
   padding: 0;
   margin: 0;
   margin-left: 20%;
 }
 
-div.modal-header img {
+div.edit-modal-header img {
   width: 32px;
   height: 32px;
   position: absolute;
@@ -301,11 +371,11 @@ div.modal-header img {
   cursor: pointer;
 }
 
-div.modal-content {
+div.edit-modal-content {
   display: flex;
 }
 
-div.modal-content div.left {
+div.edit-left {
   width: 76%;
   height: 440px;
   display: flex;
@@ -314,43 +384,88 @@ div.modal-content div.left {
   justify-content: center;
 }
 
-div.modal-content div.right {
+div.edit-right {
   width: 24%;
   height: 440px;
 }
 
-span.user-input input {
-  width: 8ch;
-  padding: 2px 4px;
-}
-
-div.left table {
+table.edit-modal-table {
   width: 100%;
   text-align: center;
   border: 2px solid black;
   padding: 20px 5px;
 }
 
-div.left table tr td input {
-  width: 10ch;
-  font-size: 18px;
-  padding: 4px 8px;
+button.edit-save-button {
+  width: 120px;
 }
 
-td input#available,
-td input#functional {
-  height: 20px;
+div.edit-right > *,
+button.browse-button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-button.save-button {
-  padding: 5px 15px;
-  font-size: 20px;
+div.edit-right {
+  color: var(--dark-color);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20px;
+}
+
+h2.edit-right-header {
+  padding: 15px 0;
+}
+
+div.drag-area {
+  max-width: 270px;
+  max-height: 340px;
+  height: 100%;
+  width: 100%;
+  background-color: #c7c4c4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  border: 2px dashed #1638e3;
+}
+
+div.drag-area.active {
+  border: 2px solid #1638e3;
+}
+
+div.drag-area i {
+  font-size: 28px;
+  padding: 15px;
+}
+
+span.remove-text {
+  display: none;
+}
+span.browse-span {
+  background: none;
   cursor: pointer;
-  margin-top: 20px;
+  color: #0e259b;
 }
 
-button.save-button:hover {
-  background-color: var(--secondary-color);
+span.header {
+  font-size: 20px;
+}
+
+button.remove-file-button {
+  padding: 8px 14px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #3c3c43;
   color: white;
-  border: 2px solid var(--secondary-color);
+  border-radius: 5px;
+  border: none;
+}
+
+button.remove-file-button:hover {
+  background-color: red;
 }

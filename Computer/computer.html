@@ -86,8 +86,8 @@
         </div>
         <div class="add-modal-content" id="add-modal-content">
           <div class="add-modal-left">
-            <table>
-              <tr>
+            <table class="add-modal-table">
+              <tr class="add-modal-tr">
                 <th>NAME</th>
                 <th>AVAILABLE</th>
                 <th>FUNCTIONAL</th>
@@ -111,21 +111,24 @@
                   <input
                     type="number"
                     name="set-number"
-                    id="add-number-input"
+                    class="add-number-input"
+                    id="add-set-number"
                   />
                 </td>
                 <td>
                   <input
                     type="number"
                     name="serial-number"
-                    id="add-serial-number-input"
+                    class="add-number-input"
+                    id="add-serial-number"
                   />
                 </td>
                 <td>
                   <input
                     type="number"
                     name="property-number"
-                    id="add-property-number-input"
+                    class="add-number-input"
+                    id="add-property-number"
                   />
                 </td>
               </tr>
@@ -145,21 +148,24 @@
                   <input
                     type="number"
                     name="set-number"
-                    id="add-set-number-input"
+                    class="add-number-input"
+                    id="add-set-number"
                   />
                 </td>
                 <td>
                   <input
                     type="number"
                     name="serial-number"
-                    id="add-serial-number-input"
+                    class="add-number-input"
+                    id="add-serial-number"
                   />
                 </td>
                 <td>
                   <input
                     type="number"
                     name="property-number"
-                    id="add-property-number-input"
+                    class="add-number-input"
+                    id="add-property-number"
                   />
                 </td>
               </tr>
@@ -179,21 +185,24 @@
                   <input
                     type="number"
                     name="set-number"
-                    id="add-set-number-input"
+                    class="add-number-input"
+                    id="add-set-number"
                   />
                 </td>
                 <td>
                   <input
                     type="number"
                     name="serial-number"
-                    id="add-serial-number-input"
+                    class="add-number-input"
+                    id="add-serial-number"
                   />
                 </td>
                 <td>
                   <input
                     type="number"
                     name="property-number"
-                    id="add-property-number-input"
+                    class="add-number-input"
+                    id="add-property-number"
                   />
                 </td>
               </tr>
@@ -213,21 +222,24 @@
                   <input
                     type="number"
                     name="set-number"
-                    id="add-set-number-input"
+                    class="add-number-input"
+                    id="add-set-number"
                   />
                 </td>
                 <td>
                   <input
                     type="number"
                     name="serial-number"
-                    id="add-serial-number-input"
+                    class="add-number-input"
+                    id="add-serial-number"
                   />
                 </td>
                 <td>
                   <input
                     type="number"
                     name="property-number"
-                    id="add-property-number-input"
+                    class="add-number-input"
+                    id="add-property-number"
                   />
                 </td>
               </tr>
@@ -247,21 +259,24 @@
                   <input
                     type="number"
                     name="set-number"
-                    id="add-set-number-input"
+                    class="add-number-input"
+                    id="add-set-number"
                   />
                 </td>
                 <td>
                   <input
                     type="number"
                     name="serial-number"
-                    id="add-serial-number-input"
+                    class="add-number-input"
+                    id="add-serial-number"
                   />
                 </td>
                 <td>
                   <input
                     type="number"
                     name="property-number"
-                    id="add-property-number-input"
+                    class="add-number-input"
+                    id="add-property-number"
                   />
                 </td>
               </tr>
@@ -454,7 +469,7 @@
       </dialog>
 
       <dialog class="edit-modal" id="edit-modal">
-        <div class="modal-header">
+        <div class="edit-modal-header">
           <span class="entry-number"
             >Entry No. <span class="entry-count">00</span></span
           >
@@ -465,9 +480,9 @@
             id="exit-edit-modal"
           />
         </div>
-        <div class="modal-content" id="modal-content">
-          <div class="left">
-            <table>
+        <div class="edit-modal-content" id="modal-content">
+          <div class="edit-left">
+            <table class="edit-modal-table">
               <tr>
                 <th>NAME</th>
                 <th>AVAILABLE</th>
@@ -479,157 +494,223 @@
               <tr>
                 <td>SYSTEM UNIT</td>
                 <td>
-                  <input type="checkbox" name="availability" id="available" />
+                  <input
+                    type="checkbox"
+                    name="availability"
+                    id="edit-available"
+                  />
                 </td>
                 <td>
-                  <input type="checkbox" name="condition" id="functional" />
+                  <input
+                    type="checkbox"
+                    name="condition"
+                    id="edit-functional"
+                  />
                 </td>
                 <td>
                   <input
                     type="number"
                     name="set-number"
-                    id="set-number-input"
+                    class="edit-number-input"
+                    id="edit-set-number"
                   />
                 </td>
                 <td>
                   <input
                     type="number"
                     name="serial-number"
-                    id="serial-number-input"
+                    class="edit-number-input"
+                    id="edit-serial-number"
                   />
                 </td>
                 <td>
                   <input
                     type="number"
                     name="property-number"
-                    id="property-number-input"
+                    class="edit-number-input"
+                    id="edit-property-number"
                   />
                 </td>
               </tr>
               <tr>
                 <td>DVD-IN CABLE</td>
                 <td>
-                  <input type="checkbox" name="availability" id="available" />
+                  <input
+                    type="checkbox"
+                    name="availability"
+                    id="edit-available"
+                  />
                 </td>
                 <td>
-                  <input type="checkbox" name="condition" id="functional" />
+                  <input
+                    type="checkbox"
+                    name="condition"
+                    id="edit-functional"
+                  />
                 </td>
                 <td>
                   <input
                     type="number"
                     name="set-number"
-                    id="set-number-input"
+                    class="edit-number-input"
+                    id="edit-set-number"
                   />
                 </td>
                 <td>
                   <input
                     type="number"
                     name="serial-number"
-                    id="serial-number-input"
+                    class="edit-number-input"
+                    id="edit-serial-number"
                   />
                 </td>
                 <td>
                   <input
                     type="number"
                     name="property-number"
-                    id="property-number-input"
+                    class="edit-number-input"
+                    id="edit-property-number"
                   />
                 </td>
               </tr>
               <tr>
                 <td>AC CORD</td>
                 <td>
-                  <input type="checkbox" name="availability" id="available" />
+                  <input
+                    type="checkbox"
+                    name="availability"
+                    id="edit-available"
+                  />
                 </td>
                 <td>
-                  <input type="checkbox" name="condition" id="functional" />
+                  <input
+                    type="checkbox"
+                    name="condition"
+                    id="edit-functional"
+                  />
                 </td>
                 <td>
                   <input
                     type="number"
                     name="set-number"
-                    id="set-number-input"
+                    class="edit-number-input"
+                    id="edit-set-number"
                   />
                 </td>
                 <td>
                   <input
                     type="number"
                     name="serial-number"
-                    id="serial-number-input"
+                    class="edit-number-input"
+                    id="edit-serial-number"
                   />
                 </td>
                 <td>
                   <input
                     type="number"
                     name="property-number"
-                    id="property-number-input"
+                    class="edit-number-input"
+                    id="edit-property-number"
                   />
                 </td>
               </tr>
               <tr>
                 <td>KEYBOARD</td>
                 <td>
-                  <input type="checkbox" name="availability" id="available" />
+                  <input
+                    type="checkbox"
+                    name="availability"
+                    id="edit-available"
+                  />
                 </td>
                 <td>
-                  <input type="checkbox" name="condition" id="functional" />
+                  <input
+                    type="checkbox"
+                    name="condition"
+                    id="edit-functional"
+                  />
                 </td>
                 <td>
                   <input
                     type="number"
                     name="set-number"
-                    id="set-number-input"
+                    class="edit-number-input"
+                    id="edit-set-number"
                   />
                 </td>
                 <td>
                   <input
                     type="number"
                     name="serial-number"
-                    id="serial-number-input"
+                    class="edit-number-input"
+                    id="edit-serial-number"
                   />
                 </td>
                 <td>
                   <input
                     type="number"
                     name="property-number"
-                    id="property-number-input"
+                    class="edit-number-input"
+                    id="edit-property-number"
                   />
                 </td>
               </tr>
               <tr>
                 <td>MOUSE</td>
                 <td>
-                  <input type="checkbox" name="availability" id="available" />
+                  <input
+                    type="checkbox"
+                    name="availability"
+                    id="edit-available"
+                  />
                 </td>
                 <td>
-                  <input type="checkbox" name="condition" id="functional" />
+                  <input
+                    type="checkbox"
+                    name="condition"
+                    id="edit-functional"
+                  />
                 </td>
                 <td>
                   <input
                     type="number"
                     name="set-number"
-                    id="set-number-input"
+                    class="edit-number-input"
+                    id="edit-set-number"
                   />
                 </td>
                 <td>
                   <input
                     type="number"
                     name="serial-number"
-                    id="serial-number-input"
+                    class="edit-number-input"
+                    id="edit-serial-number"
                   />
                 </td>
                 <td>
                   <input
                     type="number"
                     name="property-number"
-                    id="property-number-input"
+                    class="edit-number-input"
+                    id="edit-property-number"
                   />
                 </td>
               </tr>
             </table>
-            <button class="save-button" id="save-button">SAVE</button>
+            <button class="edit-save-button" id="edit-save-button">SAVE</button>
           </div>
-          <div class="right"></div>
+          <div class="edit-right">
+            <h2 class="edit-right-header">Upload File Here</h2>
+            <div class="drag-area" id="drag-area">
+              <i class="fas fa-images"></i>
+              <span class="header">DRAG & DROP</span>
+              <span class="header" id="second-text"
+                >or
+                <span class="browse-span" id="browse-span">BROWSE</span></span
+              >
+            </div>
+            <button class="remove-file-button" id="remove-file">REMOVE</button>
+          </div>
         </div>
       </dialog>
 
