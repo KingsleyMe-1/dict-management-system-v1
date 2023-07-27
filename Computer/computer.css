@@ -256,13 +256,17 @@ div.main-content-table table tr:last-child {
   border-bottom: none;
 }
 
-dialog.modal {
-  margin-top: -30px;
+dialog.edit-modal {
   width: 1200px;
   height: 550px;
   position: absolute;
   padding: 20px;
-  background-color: green;
+  background-color: #b7b7b7;
+}
+
+dialog.edit-modal::backdrop {
+  background: #0e259b;
+  opacity: 0.8;
 }
 
 div.modal-header {
@@ -275,6 +279,15 @@ div.modal-header h1 {
   padding: 0;
   margin: 0;
   margin-left: 20%;
+}
+
+div.modal-header img {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
 }
 
 div.modal-content {
@@ -293,7 +306,6 @@ div.modal-content div.left {
 div.modal-content div.right {
   width: 24%;
   height: 440px;
-  background-color: yellow;
 }
 
 span.user-input input {
@@ -323,5 +335,11 @@ button.save-button {
   padding: 5px 15px;
   font-size: 20px;
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 20px;
+}
+
+button.save-button:hover {
+  background-color: var(--secondary-color);
+  color: white;
+  border: 2px solid var(--secondary-color);
 }
