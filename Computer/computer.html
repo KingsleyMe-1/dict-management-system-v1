@@ -72,6 +72,207 @@
         </ul>
       </nav>
 
+      <dialog class="add-modal" id="add-modal">
+        <div class="add-modal-header">
+          <span class="add-entry-number"
+            >Entry No. <span class="add-entry-count">00</span></span
+          >
+          <h1>Computer Inventory</h1>
+          <img
+            src="../Images/exit-icon-4604.png"
+            alt="exit-logo"
+            id="exit-add-modal"
+          />
+        </div>
+        <div class="add-modal-content" id="add-modal-content">
+          <div class="add-modal-left">
+            <table>
+              <tr>
+                <th>NAME</th>
+                <th>AVAILABLE</th>
+                <th>FUNCTIONAL</th>
+                <th>SET NO.</th>
+                <th>SERIAL NO.</th>
+                <th>PROPERTY NO.</th>
+              </tr>
+              <tr>
+                <td>SYSTEM UNIT</td>
+                <td>
+                  <input
+                    type="checkbox"
+                    name="availability"
+                    id="add-available"
+                  />
+                </td>
+                <td>
+                  <input type="checkbox" name="condition" id="add-functional" />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="set-number"
+                    id="add-number-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="serial-number"
+                    id="add-serial-number-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="property-number"
+                    id="add-property-number-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>DVD-IN CABLE</td>
+                <td>
+                  <input
+                    type="checkbox"
+                    name="availability"
+                    id="add-available"
+                  />
+                </td>
+                <td>
+                  <input type="checkbox" name="condition" id="add-functional" />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="set-number"
+                    id="add-set-number-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="serial-number"
+                    id="add-serial-number-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="property-number"
+                    id="add-property-number-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>AC CORD</td>
+                <td>
+                  <input
+                    type="checkbox"
+                    name="availability"
+                    id="add-available"
+                  />
+                </td>
+                <td>
+                  <input type="checkbox" name="condition" id="add-functional" />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="set-number"
+                    id="add-set-number-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="serial-number"
+                    id="add-serial-number-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="property-number"
+                    id="add-property-number-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>KEYBOARD</td>
+                <td>
+                  <input
+                    type="checkbox"
+                    name="availability"
+                    id="add-available"
+                  />
+                </td>
+                <td>
+                  <input type="checkbox" name="condition" id="add-functional" />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="set-number"
+                    id="add-set-number-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="serial-number"
+                    id="add-serial-number-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="property-number"
+                    id="add-property-number-input"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>MOUSE</td>
+                <td>
+                  <input
+                    type="checkbox"
+                    name="availability"
+                    id="add-available"
+                  />
+                </td>
+                <td>
+                  <input type="checkbox" name="condition" id="add-functional" />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="set-number"
+                    id="add-set-number-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="serial-number"
+                    id="add-serial-number-input"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    name="property-number"
+                    id="add-property-number-input"
+                  />
+                </td>
+              </tr>
+            </table>
+            <button class="add-save-button" id="add-save-button">
+              ADD TO INVENTORY
+            </button>
+          </div>
+        </div>
+      </dialog>
+
       <dialog class="view-modal" id="view-modal">
         <div class="modal-header">
           <span class="entry-number"
@@ -81,7 +282,7 @@
           <img
             src="../Images/exit-icon-4604.png"
             alt="exit-logo"
-            id="exit-modal"
+            id="exit-view-modal"
           />
         </div>
         <div class="modal-content" id="modal-content">
@@ -261,7 +462,7 @@
           <img
             src="../Images/exit-icon-4604.png"
             alt="exit-logo"
-            id="exit-button"
+            id="exit-edit-modal"
           />
         </div>
         <div class="modal-content" id="modal-content">
@@ -476,22 +677,57 @@
                     alt=""
                     srcset=""
                     class="button-icon delete"
+                    id="delete-button"
                   />
                 </td>
-                <td id="view-button">
+                <td>
                   <img
                     src="../Images/view.png"
                     alt=""
                     srcset=""
                     class="button-icon view"
+                    id="view-button"
                   />
                 </td>
-                <td id="edit-button">
+                <td>
                   <img
                     src="../Images/edit.png"
                     alt=""
                     srcset=""
                     class="button-icon edit"
+                    id="edit-button"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>DESKTOP</td>
+                <td>00</td>
+                <td>00</td>
+                <td>00</td>
+                <td>Available</td>
+                <td>Ready to Use</td>
+                <td>
+                  <img
+                    src="../Images/delete.png"
+                    alt=""
+                    class="button-icon delete"
+                    id="delete-button"
+                  />
+                </td>
+                <td>
+                  <img
+                    src="../Images/view.png"
+                    alt=""
+                    class="button-icon view"
+                    id="view-button"
+                  />
+                </td>
+                <td>
+                  <img
+                    src="../Images/edit.png"
+                    alt=""
+                    class="button-icon edit"
+                    id="edit-button"
                   />
                 </td>
               </tr>
@@ -508,6 +744,7 @@
                     alt=""
                     srcset=""
                     class="button-icon delete"
+                    id="delete-button"
                   />
                 </td>
                 <td>
@@ -516,6 +753,7 @@
                     alt=""
                     srcset=""
                     class="button-icon view"
+                    id="view-button"
                   />
                 </td>
                 <td>
@@ -524,6 +762,7 @@
                     alt=""
                     srcset=""
                     class="button-icon edit"
+                    id="edit-button"
                   />
                 </td>
               </tr>
@@ -540,6 +779,7 @@
                     alt=""
                     srcset=""
                     class="button-icon delete"
+                    id="delete-button"
                   />
                 </td>
                 <td>
@@ -548,6 +788,7 @@
                     alt=""
                     srcset=""
                     class="button-icon view"
+                    id="view-button"
                   />
                 </td>
                 <td>
@@ -556,6 +797,7 @@
                     alt=""
                     srcset=""
                     class="button-icon edit"
+                    id="edit-button"
                   />
                 </td>
               </tr>
@@ -572,6 +814,7 @@
                     alt=""
                     srcset=""
                     class="button-icon delete"
+                    id="delete-button"
                   />
                 </td>
                 <td>
@@ -580,6 +823,7 @@
                     alt=""
                     srcset=""
                     class="button-icon view"
+                    id="view-button"
                   />
                 </td>
                 <td>
@@ -588,6 +832,7 @@
                     alt=""
                     srcset=""
                     class="button-icon edit"
+                    id="edit-button"
                   />
                 </td>
               </tr>
@@ -604,6 +849,7 @@
                     alt=""
                     srcset=""
                     class="button-icon delete"
+                    id="delete-button"
                   />
                 </td>
                 <td>
@@ -612,6 +858,7 @@
                     alt=""
                     srcset=""
                     class="button-icon view"
+                    id="view-button"
                   />
                 </td>
                 <td>
@@ -620,6 +867,7 @@
                     alt=""
                     srcset=""
                     class="button-icon edit"
+                    id="edit-button"
                   />
                 </td>
               </tr>
@@ -636,6 +884,7 @@
                     alt=""
                     srcset=""
                     class="button-icon delete"
+                    id="delete-button"
                   />
                 </td>
                 <td>
@@ -644,6 +893,7 @@
                     alt=""
                     srcset=""
                     class="button-icon view"
+                    id="view-button"
                   />
                 </td>
                 <td>
@@ -652,38 +902,7 @@
                     alt=""
                     srcset=""
                     class="button-icon edit"
-                  />
-                </td>
-              </tr>
-              <tr>
-                <td>DESKTOP</td>
-                <td>00</td>
-                <td>00</td>
-                <td>00</td>
-                <td>Available</td>
-                <td>Ready to Use</td>
-                <td>
-                  <img
-                    src="../Images/delete.png"
-                    alt=""
-                    srcset=""
-                    class="button-icon delete"
-                  />
-                </td>
-                <td>
-                  <img
-                    src="../Images/view.png"
-                    alt=""
-                    srcset=""
-                    class="button-icon view"
-                  />
-                </td>
-                <td>
-                  <img
-                    src="../Images/edit.png"
-                    alt=""
-                    srcset=""
-                    class="button-icon edit"
+                    id="edit-button"
                   />
                 </td>
               </tr>
