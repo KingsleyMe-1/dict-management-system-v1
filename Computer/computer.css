@@ -326,43 +326,51 @@ button.edit-save-button:hover {
 input#add-available,
 input#add-functional,
 input#edit-functional,
-input#edit-available {
+input#edit-available,
+input#view-functional,
+input#view-available {
   width: 20px;
   height: 20px;
 }
 
 input.add-number-input,
-input.edit-number-input {
+input.edit-number-input,
+input.view-number-input {
   width: 12ch;
   font-size: 15px;
   padding: 4px 6px;
 }
 
-dialog.edit-modal {
+dialog.edit-modal,
+dialog.view-modal {
   width: 1200px;
   height: 550px;
   padding: 20px;
   background-color: #b7b7b7;
 }
 
-dialog.edit-modal::backdrop {
+dialog.edit-modal::backdrop,
+dialog.view-modal::backdrop {
   background: #0e259b;
   opacity: 0.8;
 }
 
-div.edit-modal-header {
+div.edit-modal-header,
+div.view-modal-header {
   display: flex;
   align-items: center;
   padding: 10px 0;
 }
 
-div.edit-modal-header h1 {
+div.edit-modal-header h1,
+div.view-modal-header h1 {
   padding: 0;
   margin: 0;
   margin-left: 20%;
 }
 
-div.edit-modal-header img {
+div.edit-modal-header img,
+div.view-modal-header img {
   width: 32px;
   height: 32px;
   position: absolute;
@@ -371,11 +379,13 @@ div.edit-modal-header img {
   cursor: pointer;
 }
 
-div.edit-modal-content {
+div.edit-modal-content,
+div.view-modal-content {
   display: flex;
 }
 
-div.edit-left {
+div.edit-left,
+div.view-left {
   width: 76%;
   height: 440px;
   display: flex;
@@ -384,12 +394,14 @@ div.edit-left {
   justify-content: center;
 }
 
-div.edit-right {
+div.edit-right,
+div.view-right {
   width: 24%;
   height: 440px;
 }
 
-table.edit-modal-table {
+table.edit-modal-table,
+table.view-modal-table {
   width: 100%;
   text-align: center;
   border: 2px solid black;
@@ -401,13 +413,15 @@ button.edit-save-button {
 }
 
 div.edit-right > *,
+div.view-right,
 button.browse-button {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-div.edit-right {
+div.edit-right,
+div.view-right {
   color: var(--dark-color);
   padding: 12px;
   display: flex;
@@ -416,7 +430,8 @@ div.edit-right {
   margin-left: 20px;
 }
 
-h2.edit-right-header {
+h2.edit-right-header,
+h2.view-right-header {
   padding: 15px 0;
 }
 
@@ -446,6 +461,7 @@ div.drag-area i {
 span.remove-text {
   display: none;
 }
+
 span.browse-span {
   background: none;
   cursor: pointer;

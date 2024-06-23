@@ -22,19 +22,19 @@
       <nav class="navbar">
         <ul class="navbar-nav">
           <li class="nav-item" id="list1">
-            <a href="../Dashboard/dashboard.html" class="nav-link">
+            <a href="dashboard.php" class="nav-link">
               <i class="fa-solid fa-gauge-high"></i>
               <span class="nav-text" id="text1">Dashboard</span>
             </a>
           </li>
           <li class="nav-item" id="list2">
-            <a href="../Computer/computer.html" class="nav-link">
+            <a href="computer.php" class="nav-link">
               <i class="fa-solid fa-computer"></i>
               <span class="nav-text" id="text2">Computers</span>
             </a>
           </li>
           <li class="nav-item" id="list3">
-            <a href="../Laptop/laptop.html" class="nav-link">
+            <a href="laptop.php" class="nav-link">
               <i class="fa-solid fa-laptop"></i>
               <span class="nav-text" id="text3">Laptops</span>
             </a>

@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Computer | DICT</title>
-    <link rel="stylesheet" href="computer.css" />
+    <title>Other | DICT</title>
+    <link rel="stylesheet" href="other.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -27,8 +27,8 @@
               <span class="nav-text" id="text1">Dashboard</span>
             </a>
           </li>
-          <li class="nav-item active" id="list2">
-            <a href="../Computer/computer.html" class="nav-link active">
+          <li class="nav-item" id="list2">
+            <a href="../Computer/computer.html" class="nav-link">
               <i class="fa-solid fa-computer"></i>
               <span class="nav-text" id="text2">Computers</span>
             </a>
@@ -45,8 +45,8 @@
               <span class="nav-text" id="text4">Furnitures</span>
             </a>
           </li>
-          <li class="nav-item" id="list5">
-            <a href="../Other/other.html" class="nav-link">
+          <li class="nav-item active" id="list5">
+            <a href="../Other/other.html" class="nav-link active">
               <i class="fa-solid fa-list"></i>
               <span class="nav-text" id="text5">Others</span>
             </a>
@@ -77,7 +77,7 @@
           <span class="add-entry-number"
             >Entry No. <span class="add-entry-count">00</span></span
           >
-          <h1>Computer Inventory</h1>
+          <h1>Other Inventory</h1>
           <img
             src="../Images/exit-icon-4604.png"
             alt="exit-logo"
@@ -89,23 +89,29 @@
             <table class="add-modal-table">
               <tr class="add-modal-tr">
                 <th>NAME</th>
-                <th>AVAILABLE</th>
-                <th>FUNCTIONAL</th>
+                <th>SIZE</th>
+                <th>QUANTIY</th>
                 <th>SET NO.</th>
-                <th>SERIAL NO.</th>
-                <th>PROPERTY NO.</th>
+                <th>USED</th>
+                <th>NOT USED</th>
               </tr>
               <tr>
-                <td>SYSTEM UNIT</td>
+                <td>BOND PAPER</td>
                 <td>
                   <input
-                    type="checkbox"
-                    name="availability"
-                    id="add-available"
+                    type="number"
+                    name="size"
+                    class="add-number-input"
+                    id="add-size"
                   />
                 </td>
                 <td>
-                  <input type="checkbox" name="condition" id="add-functional" />
+                  <input
+                    type="number"
+                    name="quantity"
+                    class="add-number-input"
+                    id="add-quantity"
+                  />
                 </td>
                 <td>
                   <input
@@ -133,16 +139,22 @@
                 </td>
               </tr>
               <tr>
-                <td>DVD-IN CABLE</td>
+                <td>COLORED PAPER</td>
                 <td>
                   <input
-                    type="checkbox"
-                    name="availability"
-                    id="add-available"
+                    type="number"
+                    name="size"
+                    class="add-number-input"
+                    id="add-size"
                   />
                 </td>
                 <td>
-                  <input type="checkbox" name="condition" id="add-functional" />
+                  <input
+                    type="number"
+                    name="quantity"
+                    class="add-number-input"
+                    id="add-quantity"
+                  />
                 </td>
                 <td>
                   <input
@@ -170,16 +182,22 @@
                 </td>
               </tr>
               <tr>
-                <td>AC CORD</td>
+                <td>PHOTO PAPER</td>
                 <td>
                   <input
-                    type="checkbox"
-                    name="availability"
-                    id="add-available"
+                    type="number"
+                    name="size"
+                    class="add-number-input"
+                    id="add-size"
                   />
                 </td>
                 <td>
-                  <input type="checkbox" name="condition" id="add-functional" />
+                  <input
+                    type="number"
+                    name="quantity"
+                    class="add-number-input"
+                    id="add-quantity"
+                  />
                 </td>
                 <td>
                   <input
@@ -207,16 +225,22 @@
                 </td>
               </tr>
               <tr>
-                <td>KEYBOARD</td>
+                <td>SLIDING FOLDER</td>
                 <td>
                   <input
-                    type="checkbox"
-                    name="availability"
-                    id="add-available"
+                    type="number"
+                    name="size"
+                    class="add-number-input"
+                    id="add-size"
                   />
                 </td>
                 <td>
-                  <input type="checkbox" name="condition" id="add-functional" />
+                  <input
+                    type="number"
+                    name="quantity"
+                    class="add-number-input"
+                    id="add-quantity"
+                  />
                 </td>
                 <td>
                   <input
@@ -244,16 +268,22 @@
                 </td>
               </tr>
               <tr>
-                <td>MOUSE</td>
+                <td>PLASTIC FOLDER</td>
                 <td>
                   <input
-                    type="checkbox"
-                    name="availability"
-                    id="add-available"
+                    type="number"
+                    name="size"
+                    class="add-number-input"
+                    id="add-size"
                   />
                 </td>
                 <td>
-                  <input type="checkbox" name="condition" id="add-functional" />
+                  <input
+                    type="number"
+                    name="quantity"
+                    class="add-number-input"
+                    id="add-quantity"
+                  />
                 </td>
                 <td>
                   <input
@@ -289,20 +319,20 @@
       </dialog>
 
       <dialog class="view-modal" id="view-modal">
-        <div class="modal-header">
-          <span class="entry-number"
-            >Entry No. <span class="entry-count">00</span></span
+        <div class="view-modal-header">
+          <span class="view-entry-number"
+            >Entry No. <span class="view-entry-count">00</span></span
           >
-          <h1>Computer Inventory</h1>
+          <h1>Other Inventory</h1>
           <img
             src="../Images/exit-icon-4604.png"
             alt="exit-logo"
             id="exit-view-modal"
           />
         </div>
-        <div class="modal-content" id="modal-content">
-          <div class="left">
-            <table>
+        <div class="view-modal-content" id="view-modal-content">
+          <div class="view-left">
+            <table class="view-modal-table">
               <tr>
                 <th>NAME</th>
                 <th>AVAILABLE</th>
@@ -314,157 +344,215 @@
               <tr>
                 <td>SYSTEM UNIT</td>
                 <td>
-                  <input type="checkbox" name="availability" id="available" />
+                  <input
+                    type="checkbox"
+                    name="availability"
+                    id="view-available"
+                  />
                 </td>
                 <td>
-                  <input type="checkbox" name="condition" id="functional" />
+                  <input
+                    type="checkbox"
+                    name="condition"
+                    id="view-functional"
+                  />
                 </td>
                 <td>
                   <input
                     type="number"
                     name="set-number"
-                    id="set-number-input"
+                    class="view-number-input"
+                    id="view-set-number"
                   />
                 </td>
                 <td>
                   <input
                     type="number"
                     name="serial-number"
-                    id="serial-number-input"
+                    class="view-number-input"
+                    id="view-serial-number"
                   />
                 </td>
                 <td>
                   <input
                     type="number"
                     name="property-number"
-                    id="property-number-input"
+                    class="view-number-input"
+                    id="view-property-number"
                   />
                 </td>
               </tr>
               <tr>
                 <td>DVD-IN CABLE</td>
                 <td>
-                  <input type="checkbox" name="availability" id="available" />
+                  <input
+                    type="checkbox"
+                    name="availability"
+                    id="view-available"
+                  />
                 </td>
                 <td>
-                  <input type="checkbox" name="condition" id="functional" />
+                  <input
+                    type="checkbox"
+                    name="condition"
+                    id="view-functional"
+                  />
                 </td>
                 <td>
                   <input
                     type="number"
                     name="set-number"
-                    id="set-number-input"
+                    class="view-number-input"
+                    id="view-set-number"
                   />
                 </td>
                 <td>
                   <input
                     type="number"
                     name="serial-number"
-                    id="serial-number-input"
+                    class="view-number-input"
+                    id="view-serial-number"
                   />
                 </td>
                 <td>
                   <input
                     type="number"
                     name="property-number"
-                    id="property-number-input"
+                    class="view-number-input"
+                    id="view-property-number"
                   />
                 </td>
               </tr>
               <tr>
                 <td>AC CORD</td>
                 <td>
-                  <input type="checkbox" name="availability" id="available" />
+                  <input
+                    type="checkbox"
+                    name="availability"
+                    id="view-available"
+                  />
                 </td>
                 <td>
-                  <input type="checkbox" name="condition" id="functional" />
+                  <input
+                    type="checkbox"
+                    name="condition"
+                    id="view-functional"
+                  />
                 </td>
                 <td>
                   <input
                     type="number"
                     name="set-number"
-                    id="set-number-input"
+                    class="view-number-input"
+                    id="view-set-number"
                   />
                 </td>
                 <td>
                   <input
                     type="number"
                     name="serial-number"
-                    id="serial-number-input"
+                    class="view-number-input"
+                    id="view-serial-number"
                   />
                 </td>
                 <td>
                   <input
                     type="number"
                     name="property-number"
-                    id="property-number-input"
+                    class="view-number-input"
+                    id="view-property-number"
                   />
                 </td>
               </tr>
               <tr>
                 <td>KEYBOARD</td>
                 <td>
-                  <input type="checkbox" name="availability" id="available" />
+                  <input
+                    type="checkbox"
+                    name="availability"
+                    id="view-available"
+                  />
                 </td>
                 <td>
-                  <input type="checkbox" name="condition" id="functional" />
+                  <input
+                    type="checkbox"
+                    name="condition"
+                    id="view-functional"
+                  />
                 </td>
                 <td>
                   <input
                     type="number"
                     name="set-number"
-                    id="set-number-input"
+                    class="view-number-input"
+                    id="view-set-number"
                   />
                 </td>
                 <td>
                   <input
                     type="number"
                     name="serial-number"
-                    id="serial-number-input"
+                    class="view-number-input"
+                    id="view-serial-number"
                   />
                 </td>
                 <td>
                   <input
                     type="number"
                     name="property-number"
-                    id="property-number-input"
+                    class="view-number-input"
+                    id="view-property-number"
                   />
                 </td>
               </tr>
               <tr>
                 <td>MOUSE</td>
                 <td>
-                  <input type="checkbox" name="availability" id="available" />
+                  <input
+                    type="checkbox"
+                    name="availability"
+                    id="view-available"
+                  />
                 </td>
                 <td>
-                  <input type="checkbox" name="condition" id="functional" />
+                  <input
+                    type="checkbox"
+                    name="condition"
+                    id="view-functional"
+                  />
                 </td>
                 <td>
                   <input
                     type="number"
                     name="set-number"
-                    id="set-number-input"
+                    class="view-number-input"
+                    id="view-set-number"
                   />
                 </td>
                 <td>
                   <input
                     type="number"
                     name="serial-number"
-                    id="serial-number-input"
+                    class="view-number-input"
+                    id="view-serial-number"
                   />
                 </td>
                 <td>
                   <input
                     type="number"
                     name="property-number"
-                    id="property-number-input"
+                    class="view-number-input"
+                    id="view-property-number"
                   />
                 </td>
               </tr>
             </table>
-            <button class="save-button" id="save-button">SAVE</button>
           </div>
-          <div class="right"></div>
+          <div class="view-right">
+            <div class="drag-area" id="drag-area" style="margin-top: 35px">
+              <span class="browse-span" id="browse-span">FILE HERE</span>
+            </div>
+          </div>
         </div>
       </dialog>
 
@@ -473,7 +561,7 @@
           <span class="entry-number"
             >Entry No. <span class="entry-count">00</span></span
           >
-          <h1>Computer Inventory</h1>
+          <h1>Laptop Inventory</h1>
           <img
             src="../Images/exit-icon-4604.png"
             alt="exit-logo"
@@ -716,7 +804,7 @@
 
       <div class="content">
         <div class="content-header">
-          <h2 class="content-title">COMPUTERS</h2>
+          <h2 class="content-title">OTHERS</h2>
         </div>
         <div class="main-content">
           <div class="main-content-header">
@@ -737,21 +825,19 @@
           <div class="main-content-table">
             <table>
               <tr>
-                <th>Code</th>
-                <th>Control No.</th>
-                <th>Serial No.</th>
-                <th>Property No.</th>
-                <th>Status</th>
-                <th>Remarks</th>
+                <th>NAME</th>
+                <th>SIZE</th>
+                <th>QUANTITY</th>
+                <th>USED</th>
+                <th>NOT USED</th>
                 <th colspan="3">Actions</th>
               </tr>
               <tr>
-                <td>DESKTOP</td>
+                <td>BOND PAPER</td>
+                <td>A4</td>
                 <td>00</td>
                 <td>00</td>
                 <td>00</td>
-                <td>Available</td>
-                <td>Ready to Use</td>
                 <td>
                   <img
                     src="../Images/delete.png"
@@ -781,44 +867,11 @@
                 </td>
               </tr>
               <tr>
-                <td>DESKTOP</td>
+                <td>BOND PAPER</td>
                 <td>00</td>
                 <td>00</td>
                 <td>00</td>
-                <td>Available</td>
-                <td>Ready to Use</td>
-                <td>
-                  <img
-                    src="../Images/delete.png"
-                    alt=""
-                    class="button-icon delete"
-                    id="delete-button"
-                  />
-                </td>
-                <td>
-                  <img
-                    src="../Images/view.png"
-                    alt=""
-                    class="button-icon view"
-                    id="view-button"
-                  />
-                </td>
-                <td>
-                  <img
-                    src="../Images/edit.png"
-                    alt=""
-                    class="button-icon edit"
-                    id="edit-button"
-                  />
-                </td>
-              </tr>
-              <tr>
-                <td>DESKTOP</td>
                 <td>00</td>
-                <td>00</td>
-                <td>00</td>
-                <td>Available</td>
-                <td>Ready to Use</td>
                 <td>
                   <img
                     src="../Images/delete.png"
@@ -848,12 +901,11 @@
                 </td>
               </tr>
               <tr>
-                <td>DESKTOP</td>
+                <td>BOND PAPER</td>
                 <td>00</td>
                 <td>00</td>
                 <td>00</td>
-                <td>Available</td>
-                <td>Ready to Use</td>
+                <td>00</td>
                 <td>
                   <img
                     src="../Images/delete.png"
@@ -883,12 +935,11 @@
                 </td>
               </tr>
               <tr>
-                <td>DESKTOP</td>
+                <td>BOND PAPER</td>
                 <td>00</td>
                 <td>00</td>
                 <td>00</td>
-                <td>Available</td>
-                <td>Ready to Use</td>
+                <td>00</td>
                 <td>
                   <img
                     src="../Images/delete.png"
@@ -918,12 +969,11 @@
                 </td>
               </tr>
               <tr>
-                <td>DESKTOP</td>
+                <td>BOND PAPER</td>
                 <td>00</td>
                 <td>00</td>
                 <td>00</td>
-                <td>Available</td>
-                <td>Ready to Use</td>
+                <td>00</td>
                 <td>
                   <img
                     src="../Images/delete.png"
@@ -953,12 +1003,45 @@
                 </td>
               </tr>
               <tr>
-                <td>DESKTOP</td>
+                <td>BOND PAPER</td>
                 <td>00</td>
                 <td>00</td>
                 <td>00</td>
-                <td>Available</td>
-                <td>Ready to Use</td>
+                <td>00</td>
+                <td>
+                  <img
+                    src="../Images/delete.png"
+                    alt=""
+                    srcset=""
+                    class="button-icon delete"
+                    id="delete-button"
+                  />
+                </td>
+                <td>
+                  <img
+                    src="../Images/view.png"
+                    alt=""
+                    srcset=""
+                    class="button-icon view"
+                    id="view-button"
+                  />
+                </td>
+                <td>
+                  <img
+                    src="../Images/edit.png"
+                    alt=""
+                    srcset=""
+                    class="button-icon edit"
+                    id="edit-button"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>BOND PAPER</td>
+                <td>00</td>
+                <td>00</td>
+                <td>00</td>
+                <td>00</td>
                 <td>
                   <img
                     src="../Images/delete.png"
@@ -993,6 +1076,6 @@
       </div>
     </main>
 
-    <script src="computer.js"></script>
+    <script src="other.js"></script>
   </body>
 </html>
